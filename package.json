@@ -1,0 +1,19 @@
+{
+  "name": "rabbtimqhttpbackend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alikh31/RabbitMQHttpBackend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alikh31/RabbitMQHttpBackend/issues"
+  },
+  "homepage": "https://github.com/alikh31/RabbitMQHttpBackend#readme"
+}
