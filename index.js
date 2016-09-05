@@ -1,3 +1,5 @@
+'use strict'
+
 var app, express;
 
 express = require('express');
@@ -31,7 +33,7 @@ app.get('/auth/resource', function(req, res) {
   return res.status(200).send('allow');
 });
 
-let appPort = 8080
+var appPort = 8080
 
 app.listen(appPort, () => {
   console.log('app is lestening on port: ' + appPort)
