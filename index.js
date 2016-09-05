@@ -31,6 +31,8 @@ app.get('/auth/resource', function(req, res) {
   return res.status(200).send('allow');
 });
 
-console.log('hishi')
+let appPort = 8080
 
-app.listen(8080);
+app.listen(appPort, () => {
+  console.log('app is lestening on port: ' + appPort)
+})
