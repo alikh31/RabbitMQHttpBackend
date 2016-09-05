@@ -31,4 +31,6 @@ app.get('/auth/resource', function(req, res) {
   return res.status(200).send('allow');
 });
 
+console.log('hishi')
+
 app.listen(8080);
