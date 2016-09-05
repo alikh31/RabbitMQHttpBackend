@@ -60,6 +60,7 @@ RUN curl https://raw.githubusercontent.com/creationix/nvm/v0.20.0/install.sh | b
 ENV NODE_PATH /usr/local/nvm/versions/v4.4.7/lib/node_modules
 ENV PATH      /usr/local/nvm/versions/v4.4.7/bin:$PATH
 
+RUN apt-get update
 RUN git clone https://github.com/alikh31/RabbitMQHttpBackend.git \
     && cd RabbitMQHttpBackend \
     && npm i

@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/alikh31/RabbitMQHttpBackend/issues"
   },
-  "homepage": "https://github.com/alikh31/RabbitMQHttpBackend#readme"
+  "homepage": "https://github.com/alikh31/RabbitMQHttpBackend#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
