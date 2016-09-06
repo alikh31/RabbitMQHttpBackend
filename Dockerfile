@@ -13,7 +13,6 @@ RUN wget http://www.rabbitmq.com/community-plugins/v3.6.x/rabbitmq_auth_backend_
 # remove and download rabbitmq config file
 RUN rm /etc/rabbitmq/rabbitmq.config
 
-
 RUN echo '[{rabbit, [{auth_backends, [rabbit_auth_backend_internal, rabbit_auth_backend_http]}]},\
   	{rabbitmq_auth_backend_http,\
   	[{user_path,     "http://localhost:8080/auth/user"},\
