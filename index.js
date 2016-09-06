@@ -7,6 +7,7 @@ express = require('express');
 app = express();
 
 app.get('/auth/user', function(req, res) {
+  console.log(req);
   console.log('/auth/user');
   console.log(req.query);
   return res.status(200).send('allow [ Administrator ]');
