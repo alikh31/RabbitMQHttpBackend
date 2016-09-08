@@ -61,6 +61,6 @@ ENV PATH      /usr/local/nvm/versions/v4.4.7/bin:$PATH
 
 RUN mkdir startup
 
-RUN echo ' git clone https://github.com/alikh31/RabbitMQHttpBackend.git && cd RabbitMQHttpBackend && npm i && rabbitmq-server -detached && node index.js ' > /startup/run.sh
+RUN echo "rabbitmq-server -detached && /bin/sh -c 'sleep 15s' && rabbitmqctl add_vhost dev && git clone https://github.com/alikh31/RabbitMQHttpBackend.git && cd RabbitMQHttpBackend && npm i && node index.js" > /startup/run.sh
 
 EXPOSE 15672 1883 8883 15675 8080
